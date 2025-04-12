@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampa Proyekt</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome əlavə etmək -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <img id="lamp" src="./images/pic_bulboff.gif" alt="Lampa">
+    <!-- Font Awesome iconları ilə düymələr -->
+    <button onclick="toggleLamp()">
+        <i class="fas fa-toggle-on"></i> On
+    </button>
+    <button onclick="turnOff()">
+        <i class="fas fa-toggle-off"></i> Off
+    </button>
+    <!-- + və - düymələri -->
+<div>
+    <button onclick="adjustBrightness('increase')">+</button>
+    <button onclick="adjustBrightness('decrease')">-</button>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

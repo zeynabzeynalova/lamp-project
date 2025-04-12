@@ -1,0 +1,106 @@
+/* Bütün səhifə üçün əsas tərtibat */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #ff6ec7, #f7b7a3); /* Parlaq gradient fon */
+    background-size: 400% 400%; /* Hərəkətli fon */
+    animation: gradientMove 5s ease infinite; /* Gradientsin animasiya ilə hərəkət etməsi */
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Hərəkətli fon animasiyası */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Lampa şəkli üçün stil */
+#lamp {
+    width: 250px;
+    height: auto;
+    transition: transform 0.5s ease; /* Lampa animasiyası */
+    margin-bottom: 30px;
+   
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Şəkil ətrafında işıq effekti */
+}
+
+/* Düymələr üçün stil */
+button {
+    background-color: rgba(0, 128, 255, 0.8); /* Tünd mavi düymələr */
+    color: white;
+    font-size: 20px;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover edərkən düymə effekti */
+button:hover {
+    background-color: rgba(0, 150, 255, 0.8);
+    transform: scale(1.1); /* Daha böyük görünəcək */
+}
+
+/* İkonalar üçün stil */
+button i {
+    margin-right: 10px;
+    font-size: 25px;
+}
+/* Gündüz (light) rejimi */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Gecə (dark) rejimi */
+body.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+/* Lampa şəkli gecə rejimində */
+body.dark-mode #lamp {
+    filter: brightness(0.8);
+}
+
+/* Düymələrin ümumi tərzi */
+button {
+    background-color: #4CAF50; /* Yaşıl rəng */
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Düymə üzərində hover effekti */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Böyüyür */
+}
+
+/* Düymələr arasındakı boşluğu tənzimləyirik */
+div {
+    text-align: center;
+    margin-top: 20px;
+}
